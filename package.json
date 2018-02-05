@@ -1,0 +1,43 @@
+{
+  "name": "informa-client",
+  "version": "0.1.0",
+  "description": "Communicate with 'informa' service",
+  "author": {
+    "name": "José Carneiro",
+    "email": "contact@josecarnei.ro",
+    "url": "https://josecarnei.ro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josecarneiro/informa-client.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josecarneiro/informa-client/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server",
+    "dev": "nodemon ./server",
+    "test": "mocha ./test/index.js",
+    "test:dev": "nodemon --exec \"mocha ./test/index.js || true\"",
+    "lint": "eslint ./ --cache --ignore-pattern .gitignore client"
+  },
+  "engines": {
+    "node": ">=8.6.0",
+    "npm": ">= 5.6.0"
+  },
+  "dependencies": {
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.14.0",
+    "eslint-cli": "^1.1.1",
+    "eslint-config-josecarneiro": "^0.0.2",
+    "mocha": "^4.1.0",
+    "nodemon": "^1.14.9",
+    "supertest": "^3.0.0"
+  }
+}
